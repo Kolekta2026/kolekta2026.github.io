@@ -4,6 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Kolekta</title>
+<meta name="apple-itunes-app" content="app-id=6816333352">
 <meta name="description" content="Kolekta — koleksiyonların için sade bir arşiv. A simple archive for everything you collect.">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 140 140'%3E%3Crect width='140' height='140' fill='%23000'/%3E%3Cpolygon points='32,32%2052,32%2052,62%2082,32%20108,32%2070,70%20108,108%2082,108%2052,78%2052,108%2032,108' fill='%23fff'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -30,7 +31,13 @@ html[data-lang="tr"] .en, html[data-lang="en"] .tr{display:none}
 .word{font-weight:900;font-size:clamp(84px,22vw,176px);line-height:.86;letter-spacing:-.055em;margin:0}
 .tagline{font-weight:800;font-size:clamp(24px,5vw,34px);line-height:1.15;letter-spacing:-.02em;margin:28px 0 14px;max-width:18ch}
 .lead{color:var(--grey);max-width:56ch;margin:0}
-.soon{display:inline-block;margin-top:26px;border:1.5px solid var(--ink);padding:10px 16px;font-weight:700;font-size:15px}
+.stores{display:flex;flex-wrap:wrap;align-items:center;gap:14px 18px;margin-top:28px}
+.badge{display:inline-block;line-height:0;text-decoration:none}
+.badge img{height:54px;width:auto;display:block}
+.badge .fb{display:none}
+.badge.fallback img{display:none}
+.badge.fallback .fb{display:inline-block;line-height:1;background:var(--ink);color:var(--paper);padding:16px 22px;font-weight:800;font-size:16px}
+.soon{display:inline-block;border:1.5px solid var(--ink);padding:10px 16px;font-weight:700;font-size:14px}
 h1{font-weight:900;font-size:clamp(38px,8vw,56px);line-height:1;letter-spacing:-.04em;margin:40px 0 10px}
 h2{font-weight:800;font-size:26px;letter-spacing:-.02em;margin:56px 0 14px}
 h3{font-weight:800;font-size:18px;margin:32px 0 6px}
@@ -67,12 +74,18 @@ footer{margin:72px 0 40px;padding-top:18px;border-top:1px solid var(--line);disp
   <div class="tr">
     <p class="tagline">Koleksiyonların için sade bir arşiv.</p>
     <p class="lead">Saatler, plaklar, pullar, kalemler ya da tamamen sana özel bir koleksiyon. Fotoğraflarıyla kaydet, istediğin gibi düzenle, değerini takip et. Hesap yok, reklam yok; her şey senin telefonunda.</p>
-    <span class="soon">Yakında App Store'da</span>
+    <div class="stores">
+      <a class="badge" href="https://apps.apple.com/tr/app/kolekta-collection-tracker/id6816333352" aria-label="Kolekta'yı App Store'dan indirin"><img src="appstore-badge-tr.svg" alt="App Store'dan İndirin" onerror="this.parentNode.classList.add('fallback')"><span class="fb">App Store'dan indir</span></a>
+      <span class="soon">Google Play'de yakında</span>
+    </div>
   </div>
   <div class="en">
     <p class="tagline">A simple archive for everything you collect.</p>
     <p class="lead">Watches, vinyl, stamps, pens or a collection entirely your own. Record it with photos, arrange it your way and track its value. No account, no ads; everything stays on your phone.</p>
-    <span class="soon">Coming soon to the App Store</span>
+    <div class="stores">
+      <a class="badge" href="https://apps.apple.com/tr/app/kolekta-collection-tracker/id6816333352" aria-label="Download Kolekta on the App Store"><img src="appstore-badge-en.svg" alt="Download on the App Store" onerror="this.parentNode.classList.add('fallback')"><span class="fb">Download on the App Store</span></a>
+      <span class="soon">Coming soon to Google Play</span>
+    </div>
   </div>
 </section>
 
